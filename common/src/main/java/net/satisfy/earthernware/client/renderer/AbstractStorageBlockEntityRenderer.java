@@ -1,12 +1,15 @@
 package net.satisfy.earthernware.client.renderer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.math.Axis;
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.satisfy.earthernware.core.block.AbstractStorageBlock;
 import net.satisfy.earthernware.core.block.entity.AbstractStorageBlockEntity;
 
@@ -63,6 +66,11 @@ public class AbstractStorageBlockEntityRenderer {
         poseStack.pushPose();
         poseStack.translate(0.5D, 0.0D, 0.5D);
 
+        if (blockState.hasProperty(BlockStateProperties.HORIZONTAL_FACING)) {
+            Direction facing = blockState.getValue(BlockStateProperties.HORIZONTAL_FACING);
+            poseStack.mulPose(Axis.YP.rotationDegrees(-facing.toYRot()));
+        }
+
         RenderTransform transform = getTransformForBlock(blockState.getBlock());
         applyTransform(poseStack, transform);
 
@@ -78,7 +86,7 @@ public class AbstractStorageBlockEntityRenderer {
     public static void applyTransform(PoseStack poseStack, RenderTransform transform) {
         poseStack.translate(transform.offsetX(), transform.offsetY(), transform.offsetZ());
         if (transform.rotateYDegrees() != 0.0f) {
-            poseStack.mulPose(com.mojang.math.Axis.YP.rotationDegrees(transform.rotateYDegrees()));
+            poseStack.mulPose(Axis.YP.rotationDegrees(transform.rotateYDegrees()));
         }
         if (transform.scale() != 1.0f) {
             float scale = transform.scale();

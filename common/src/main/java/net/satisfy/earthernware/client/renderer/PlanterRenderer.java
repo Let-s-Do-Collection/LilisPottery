@@ -16,10 +16,9 @@ public class PlanterRenderer implements AbstractStorageTypeRenderer {
             if (stack.isEmpty() || !(stack.getItem() instanceof BlockItem blockItem)) continue;
 
             matrices.pushPose();
-            matrices.translate(0.0f, 0.0f, -0.5f * slotIndex);
+            matrices.translate(-0.8f, 0.05f, -0.5f * slotIndex);
             ClientUtil.renderBlockFromItem(blockItem, matrices, vertexConsumers, entity);
             matrices.popPose();
         }
     }
-
 }

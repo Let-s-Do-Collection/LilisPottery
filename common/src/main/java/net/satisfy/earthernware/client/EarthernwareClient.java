@@ -122,7 +122,7 @@ public class EarthernwareClient {
     }
 
     public static void registerBlockTransforms() {
-        AbstractStorageBlockEntityRenderer.registerClassTransform(PlanterBlock.class, new AbstractStorageBlockEntityRenderer.RenderTransform(-0.25f, 0.25f, 0.75f, 1.0f, 0f));
+        AbstractStorageBlockEntityRenderer.registerClassTransform(PlanterBlock.class, new AbstractStorageBlockEntityRenderer.RenderTransform(0.225f, 0.25f, 0f, 1.0f, -90.0f));
         AbstractStorageBlockEntityRenderer.registerClassTransform(VaseBlock.class, new AbstractStorageBlockEntityRenderer.RenderTransform(-0.5f, 0.8f, -0.5f, 1.0f, 0.0f));
         AbstractStorageBlockEntityRenderer.registerClassTransform(BudVaseBlock.class, new AbstractStorageBlockEntityRenderer.RenderTransform(-0.5f, 0.6f, -0.5f, 1.0f, 0.0f));
         AbstractStorageBlockEntityRenderer.registerClassTransform(CupellaBlock.class, new AbstractStorageBlockEntityRenderer.RenderTransform(-0.5f, 0.3f, -0.5f, 1.0f, 0.0f));
