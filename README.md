@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Let-s-Do-Collection/LilisPottery/blob/main/Lilis%20Pottery.png?raw=true" width="1200" />
+  <img src="https://github.com/Let-s-Do-Collection/LilisPottery/blob/main/LOGO.png?raw=true" width="1200" />
 </p>
 
 <div style="text-align: center;">
