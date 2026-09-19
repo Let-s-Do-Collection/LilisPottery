@@ -20,6 +20,102 @@
     "experience": 250
   },
   "criteria": {
+    "blue_planter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:blue_planter"
+            ]
+          }
+        ]
+      }
+    },
+    "blue_plant_bowl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:blue_plant_bowl"
+            ]
+          }
+        ]
+      }
+    },
+    "blue_cupella": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:blue_cupella"
+            ]
+          }
+        ]
+      }
+    },
+    "blue_bud_vase": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:blue_bud_vase"
+            ]
+          }
+        ]
+      }
+    },
+    "blue_vase": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:blue_vase"
+            ]
+          }
+        ]
+      }
+    },
+    "blue_garden_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:blue_garden_pot"
+            ]
+          }
+        ]
+      }
+    },
+    "blue_square_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:blue_square_pot"
+            ]
+          }
+        ]
+      }
+    },
+    "blue_amphore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:blue_amphore"
+            ]
+          }
+        ]
+      }
+    },
     "blue_urn": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -34,6 +130,30 @@
     }
   },
   "requirements": [
+    [
+      "blue_planter"
+    ],
+    [
+      "blue_plant_bowl"
+    ],
+    [
+      "blue_cupella"
+    ],
+    [
+      "blue_bud_vase"
+    ],
+    [
+      "blue_vase"
+    ],
+    [
+      "blue_garden_pot"
+    ],
+    [
+      "blue_square_pot"
+    ],
+    [
+      "blue_amphore"
+    ],
     [
       "blue_urn"
     ]

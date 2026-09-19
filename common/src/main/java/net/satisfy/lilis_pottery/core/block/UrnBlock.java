@@ -178,6 +178,11 @@ public class UrnBlock extends AbstractFacingBlock implements EntityBlock {
                 tooltipComponents.add(Component.translatable("tooltip.lilis_pottery.painted", colorName)
                         .withStyle(Style.EMPTY.withColor(TextColor.fromRgb(earthy))));
             }
+
+            if (tag.contains("glazed", 1) && tag.getBoolean("glazed")) {
+                tooltipComponents.add(Component.translatable("tooltip.lilis_pottery.glazed")
+                        .withStyle(Style.EMPTY.withColor(TextColor.fromRgb(earthy))));
+            }
         }
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);

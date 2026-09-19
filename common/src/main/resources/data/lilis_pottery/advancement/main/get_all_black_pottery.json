@@ -20,6 +20,102 @@
     "experience": 250
   },
   "criteria": {
+    "black_planter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:black_planter"
+            ]
+          }
+        ]
+      }
+    },
+    "black_plant_bowl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:black_plant_bowl"
+            ]
+          }
+        ]
+      }
+    },
+    "black_cupella": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:black_cupella"
+            ]
+          }
+        ]
+      }
+    },
+    "black_bud_vase": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:black_bud_vase"
+            ]
+          }
+        ]
+      }
+    },
+    "black_vase": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:black_vase"
+            ]
+          }
+        ]
+      }
+    },
+    "black_garden_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:black_garden_pot"
+            ]
+          }
+        ]
+      }
+    },
+    "black_square_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:black_square_pot"
+            ]
+          }
+        ]
+      }
+    },
+    "black_amphore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:black_amphore"
+            ]
+          }
+        ]
+      }
+    },
     "black_urn": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -34,6 +130,30 @@
     }
   },
   "requirements": [
+    [
+      "black_planter"
+    ],
+    [
+      "black_plant_bowl"
+    ],
+    [
+      "black_cupella"
+    ],
+    [
+      "black_bud_vase"
+    ],
+    [
+      "black_vase"
+    ],
+    [
+      "black_garden_pot"
+    ],
+    [
+      "black_square_pot"
+    ],
+    [
+      "black_amphore"
+    ],
     [
       "black_urn"
     ]

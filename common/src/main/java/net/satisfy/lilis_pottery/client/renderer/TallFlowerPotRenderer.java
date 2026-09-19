@@ -27,10 +27,12 @@ public class TallFlowerPotRenderer implements AbstractStorageTypeRenderer {
         BlockState lowerState = blockItem.getBlock().defaultBlockState();
         ClientUtil.renderBlock(lowerState, matrices, vertexConsumers, entity);
 
-        BlockState upperState = lowerState.setValue(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER);
-        matrices.pushPose();
-        matrices.translate(0.0f, 1.0f, 0.0f);
-        ClientUtil.renderBlock(upperState, matrices, vertexConsumers, entity);
-        matrices.popPose();
+        if (lowerState.getBlock() instanceof DoublePlantBlock) {
+            BlockState upperState = lowerState.setValue(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER);
+            matrices.pushPose();
+            matrices.translate(0.0f, 1.0f, 0.0f);
+            ClientUtil.renderBlock(upperState, matrices, vertexConsumers, entity);
+            matrices.popPose();
+        }
     }
 }

@@ -9,6 +9,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.Clearable;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -17,7 +18,7 @@ import net.satisfy.lilis_pottery.core.registry.EntityTypeRegistry;
 import net.satisfy.lilis_pottery.core.util.GeneralUtil;
 import org.jetbrains.annotations.NotNull;
 
-public class AbstractStorageBlockEntity extends BlockEntity {
+public class AbstractStorageBlockEntity extends BlockEntity implements Clearable {
 
     private int size;
     private NonNullList<ItemStack> inventory;
@@ -167,5 +168,13 @@ public class AbstractStorageBlockEntity extends BlockEntity {
 
     public NonNullList<ItemStack> getInventory() {
         return inventory;
+    }
+
+    @Override
+    public void clearContent() {
+        for (int slot = 0; slot < inventory.size(); slot++) {
+            inventory.set(slot, ItemStack.EMPTY);
+        }
+        setChanged();
     }
 }

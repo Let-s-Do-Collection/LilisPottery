@@ -31,7 +31,7 @@ public class GardenPotBlock extends AbstractFlowerPotBlock {
 
 
     public boolean canInsertStack(ItemStack stack) {
-        return stack.is(ItemTags.TALL_FLOWERS);
+        return stack.is(ItemTags.TALL_FLOWERS) || stack.is(ItemTags.SMALL_FLOWERS);
     }
 
 

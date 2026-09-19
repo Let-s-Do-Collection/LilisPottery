@@ -20,6 +20,102 @@
     "experience": 250
   },
   "criteria": {
+    "red_planter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:red_planter"
+            ]
+          }
+        ]
+      }
+    },
+    "red_plant_bowl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:red_plant_bowl"
+            ]
+          }
+        ]
+      }
+    },
+    "red_cupella": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:red_cupella"
+            ]
+          }
+        ]
+      }
+    },
+    "red_bud_vase": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:red_bud_vase"
+            ]
+          }
+        ]
+      }
+    },
+    "red_vase": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:red_vase"
+            ]
+          }
+        ]
+      }
+    },
+    "red_garden_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:red_garden_pot"
+            ]
+          }
+        ]
+      }
+    },
+    "red_square_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:red_square_pot"
+            ]
+          }
+        ]
+      }
+    },
+    "red_amphore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:red_amphore"
+            ]
+          }
+        ]
+      }
+    },
     "red_urn": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -34,6 +130,30 @@
     }
   },
   "requirements": [
+    [
+      "red_planter"
+    ],
+    [
+      "red_plant_bowl"
+    ],
+    [
+      "red_cupella"
+    ],
+    [
+      "red_bud_vase"
+    ],
+    [
+      "red_vase"
+    ],
+    [
+      "red_garden_pot"
+    ],
+    [
+      "red_square_pot"
+    ],
+    [
+      "red_amphore"
+    ],
     [
       "red_urn"
     ]

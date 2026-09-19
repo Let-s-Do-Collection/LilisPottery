@@ -20,6 +20,102 @@
     "experience": 250
   },
   "criteria": {
+    "yellow_planter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:yellow_planter"
+            ]
+          }
+        ]
+      }
+    },
+    "yellow_plant_bowl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:yellow_plant_bowl"
+            ]
+          }
+        ]
+      }
+    },
+    "yellow_cupella": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:yellow_cupella"
+            ]
+          }
+        ]
+      }
+    },
+    "yellow_bud_vase": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:yellow_bud_vase"
+            ]
+          }
+        ]
+      }
+    },
+    "yellow_vase": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:yellow_vase"
+            ]
+          }
+        ]
+      }
+    },
+    "yellow_garden_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:yellow_garden_pot"
+            ]
+          }
+        ]
+      }
+    },
+    "yellow_square_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:yellow_square_pot"
+            ]
+          }
+        ]
+      }
+    },
+    "yellow_amphore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:yellow_amphore"
+            ]
+          }
+        ]
+      }
+    },
     "yellow_urn": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -34,6 +130,30 @@
     }
   },
   "requirements": [
+    [
+      "yellow_planter"
+    ],
+    [
+      "yellow_plant_bowl"
+    ],
+    [
+      "yellow_cupella"
+    ],
+    [
+      "yellow_bud_vase"
+    ],
+    [
+      "yellow_vase"
+    ],
+    [
+      "yellow_garden_pot"
+    ],
+    [
+      "yellow_square_pot"
+    ],
+    [
+      "yellow_amphore"
+    ],
     [
       "yellow_urn"
     ]

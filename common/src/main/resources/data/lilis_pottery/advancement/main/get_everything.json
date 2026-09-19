@@ -35,18 +35,6 @@
         ]
       }
     },
-    "lilis_pottery_table": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "lilis_pottery:lilis_pottery_table"
-            ]
-          }
-        ]
-      }
-    },
     "kiln": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -526,26 +514,11 @@
           }
         ]
       }
-    },
-    "lilis_statue": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "lilis_pottery:lilis_statue"
-            ]
-          }
-        ]
-      }
     }
   },
   "requirements": [
     [
       "pottery_table"
-    ],
-    [
-      "lilis_pottery_table"
     ],
     [
       "kiln"
@@ -666,9 +639,6 @@
     ],
     [
       "black_amphore"
-    ],
-    [
-      "lilis_statue"
     ]
   ]
 }

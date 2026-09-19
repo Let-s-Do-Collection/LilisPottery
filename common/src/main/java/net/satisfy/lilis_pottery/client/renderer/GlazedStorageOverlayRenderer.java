@@ -38,19 +38,27 @@ public class GlazedStorageOverlayRenderer implements BlockEntityRenderer<Abstrac
             return;
         }
 
-        BlockPos pos = blockEntity.getBlockPos();
-        BlockState state = blockEntity.getBlockState();
+        renderGlaze(level, blockEntity.getBlockPos(), blockEntity.getBlockState(), blockEntity.getGlazeStrength(), poseStack, bufferSource);
+    }
 
+    public static void renderGlaze(Level level, BlockPos pos, BlockState state, float glazeStrength, @NotNull PoseStack poseStack, @NotNull MultiBufferSource bufferSource) {
         poseStack.pushPose();
 
         BlockRenderDispatcher dispatcher = Minecraft.getInstance().getBlockRenderer();
         BakedModel baseModel = dispatcher.getBlockModel(state);
-        BakedModel overlayModel = new OffsetTintQuadsModel(baseModel, 0.0012f);
+        BakedModel overlayModel = new OffsetTintQuadsModel(baseModel, 0.0013f);
 
         int tintColor = resolveTintColor(level, pos, state, baseModel);
         float red = ((tintColor >> 16) & 255) / 255.0f;
         float green = ((tintColor >> 8) & 255) / 255.0f;
         float blue = (tintColor & 255) / 255.0f;
+
+        // Lighten the paint color towards white to simulate a glossy glaze sheen,
+        // scaling with how many times the block has been glazed (0..2.0 -> 0..~70%).
+        float sheen = Math.min(1.0f, glazeStrength / 2.0f) * 0.7f;
+        red += (1.0f - red) * sheen;
+        green += (1.0f - green) * sheen;
+        blue += (1.0f - blue) * sheen;
 
         RenderType renderType = ItemBlockRenderTypes.getRenderType(state, false);
 

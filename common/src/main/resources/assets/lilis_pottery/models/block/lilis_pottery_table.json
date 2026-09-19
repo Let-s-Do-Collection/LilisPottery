@@ -29,7 +29,7 @@
 			"to": [7, 15, 15],
 			"rotation": {"angle": 0, "axis": "y", "origin": [1, 15, 9]},
 			"faces": {
-				"up": {"uv": [6, 5, 12, 11], "texture": "#6", "tintindex": 0}
+				"up": {"uv": [6, 5, 12, 11], "texture": "#6", "tintindex": 1}
 			}
 		},
 		{

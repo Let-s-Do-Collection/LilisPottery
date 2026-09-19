@@ -128,6 +128,7 @@ public class EWEnglishLangGen extends FabricLanguageProvider {
         texts.add("tooltip.lilis_pottery.tooltip_information.hold", "Hold %s for more Information");
         texts.add("tooltip.lilis_pottery.tooltip_information.info_3", "Keeps your Items safe when carried in your Inventory upon death.");
         texts.add("tooltip.lilis_pottery.painted", "This Block has been Fired with Dye: %s");
+        texts.add("tooltip.lilis_pottery.glazed", "This Block has been Glazed");
         texts.add("entity.minecraft.villager.clayworker", "Clayworker");
         texts.add("entity.minecraft.villager.lilis_pottery.clayworker", "Clayworker");
         texts.add("advancement.lilis_pottery.root", "A Little Clay Never Hurt");

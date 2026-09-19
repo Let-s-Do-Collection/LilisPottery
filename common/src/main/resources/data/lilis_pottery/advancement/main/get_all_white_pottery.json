@@ -20,6 +20,102 @@
     "experience": 250
   },
   "criteria": {
+    "white_planter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:white_planter"
+            ]
+          }
+        ]
+      }
+    },
+    "white_plant_bowl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:white_plant_bowl"
+            ]
+          }
+        ]
+      }
+    },
+    "white_cupella": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:white_cupella"
+            ]
+          }
+        ]
+      }
+    },
+    "white_bud_vase": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:white_bud_vase"
+            ]
+          }
+        ]
+      }
+    },
+    "white_vase": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:white_vase"
+            ]
+          }
+        ]
+      }
+    },
+    "white_garden_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:white_garden_pot"
+            ]
+          }
+        ]
+      }
+    },
+    "white_square_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:white_square_pot"
+            ]
+          }
+        ]
+      }
+    },
+    "white_amphore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lilis_pottery:white_amphore"
+            ]
+          }
+        ]
+      }
+    },
     "white_urn": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -34,6 +130,30 @@
     }
   },
   "requirements": [
+    [
+      "white_planter"
+    ],
+    [
+      "white_plant_bowl"
+    ],
+    [
+      "white_cupella"
+    ],
+    [
+      "white_bud_vase"
+    ],
+    [
+      "white_vase"
+    ],
+    [
+      "white_garden_pot"
+    ],
+    [
+      "white_square_pot"
+    ],
+    [
+      "white_amphore"
+    ],
     [
       "white_urn"
     ]

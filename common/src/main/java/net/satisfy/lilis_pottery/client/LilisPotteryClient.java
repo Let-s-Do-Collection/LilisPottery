@@ -78,6 +78,9 @@ public class LilisPotteryClient {
         );
 
         ColorHandlerRegistry.registerBlockColors((state, world, pos, tintIndex) -> {
+            if (tintIndex != 1) {
+                return -1;
+            }
             if (world == null || pos == null) {
                 return -1;
             }
@@ -85,7 +88,7 @@ public class LilisPotteryClient {
         }, POTTERY_TABLE.get(), LILIS_POTTERY_TABLE.get());
 
         ColorHandlerRegistry.registerItemColors((stack, tintIndex) -> {
-            if (tintIndex != 0) {
+            if (tintIndex != 1) {
                 return -1;
             }
             return 4159204;
@@ -126,5 +129,6 @@ public class LilisPotteryClient {
 
     public static void registerBlockEntityRenderer() {
         BlockEntityRendererRegistry.register(EntityTypeRegistry.STORAGE_BLOCK_ENTITY.get(), context -> new StorageBlockEntityRenderer());
+        BlockEntityRendererRegistry.register(EntityTypeRegistry.URN_BLOCK_ENTITY.get(), context -> new UrnGlazeOverlayRenderer());
     }
 }
